@@ -1,11 +1,11 @@
-# MyStore - Udacity Fullstack JS Nanodegree
+# Primer Merchant Integration
 
-## Introduction ##
-
-This is an app simulating an e-commerce front-end where users can add products to a cart, see product information pages, edit cart details and fill in a checkout form. The app is build with Angular 12.
-
----
 ## How to use ##
+
+### Environment variables ###
+
+The repo includes and `env.example` file. Create a `.env`file in the root folder and copy the content from the `env.example` replacing the placeholder code with your API_KEY.
+
 
 ### Installing dependencies ###
 
@@ -18,10 +18,10 @@ npm install
 ### Development server ###
 
 ```
-ng serve
+npm run start
 ```
 
-will run the app on a dev server listening by default on port `4200`. Navigate to `http://localhost:4200/` to see the app and interact with it. The app will automatically reload if you change any of the source files. If you wish the dev server to listen on a different port run `ng serve --port PORT_NUMBER`
+will run the app on a dev server listening by default on port `4200`. Navigate to `http://localhost:4200/` to see the app and interact with it. The app will automatically reload if you change any of the source files. If you wish the dev server to listen on a different port edit the `ng serve` script with a `--port PORT_NUMBER` flag.
 
 ### Scripts ###
 
@@ -63,4 +63,3 @@ npm run lint
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# awesome-merchant-integration
