@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  background: white;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.btn-nav {
+  background-color: white;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-nav.active {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-nav:hover {
+  color: white;
+  background-color: #e26872;
+  transition-duration: 1s;
+  transition-property: background-color;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}

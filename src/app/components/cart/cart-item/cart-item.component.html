@@ -1,0 +1,13 @@
+<div class="cart-item">
+  <a routerLink="/products/{{ cartItem.id }}">
+    <img src="{{ cartItem.url }}" alt="{{ cartItem.name }}">
+  </a>
+  <div class="cart-item-info">
+    <div class="cart-item-details">
+      <h3 class="item-name">{{ cartItem.name }}</h3>
+      <p class="item-price">{{ cartItem.price | currency :'EUR'}}</p>
+      <p class="item-amount">Amount: <input class="form-control item-amount-selector" type="number" min="1" max="{{cartItem.availableAmount}}" name="cartItem.selectedAmount" [(ngModel)]="cartItem.selectedAmount" (click)="changeSelectedAmount(cartItem)"></p>
+    </div>
+    <button class="btn btn-danger remove" (click)="removeFromCart(cartItem)">Remove</button>
+  </div>
+</div>

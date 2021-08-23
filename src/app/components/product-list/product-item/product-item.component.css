@@ -1,0 +1,11 @@
+img {
+  height: 450px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(200,200,200);
+  margin-bottom: 10px;
+}
+
+.product-item {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.cart-item {
+  display: flex;
+  width: 220px;
+  margin-right: 20px;
+}
+
+img {
+  height: 150px;
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(200,200,200);
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 18px;
+}
+
+.item-price {
+  margin: 0;
+  font-size: 14px;
+}
+
+.item-amount {
+  font-size: 14px;
+}
+
+.item-amount-selector {
+  height: fit-content;
+  width: 70px;
+}
+
+.remove {
+  font-size: 10px;
+  width: fit-content;
+  padding: 0 4px;
+}

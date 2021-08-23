@@ -1,0 +1,9 @@
+<form class="amount-selector" (ngSubmit)="addToCart(productItem)" #form="ngForm">
+
+  <select class="form-control"  name="selectedAmount" [(ngModel)]="selectedAmount">
+    <option value="0" disabled selected><p>Amount</p></option>
+    <option *ngFor="let number of availableAmounts" value="{{ number }}">{{ number }}</option>
+  </select>
+
+  <button type="submit" class="btn btn-danger" [disabled]="selectedAmount < 1">Add to Cart</button>
+</form>

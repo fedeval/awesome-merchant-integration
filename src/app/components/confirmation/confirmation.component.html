@@ -1,0 +1,26 @@
+<div class="confirmation-container">
+  <h1>Success! 🚀</h1>
+  <br>
+  <p>Thank you, <strong>{{ fullName }}</strong></p>
+  <br>
+  <p>Your <strong>{{ totalPrice | currency: 'EUR' }}</strong> order is confirmed!</p>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Amount</th>
+      <th>Price per unit</th>
+      <th>Price total</th>
+    </tr>
+    <tr *ngFor="let item of cartList">
+      <td>{{ item.name }}</td>
+      <td>{{ item.selectedAmount }}</td>
+      <td>{{ item.price | currency: 'EUR' }}</td>
+      <td>{{ item.price * item.selectedAmount! | currency: 'EUR' }}</td>
+    </tr>
+  </table>
+  <br>
+  <p>Delivery address: <strong>{{ address }}</strong></p>
+  <p>Please allow 1-3 business day(s) for shipping.</p>
+  <br>
+  <button class="btn btn-danger" routerLink="/products">Back to Product list</button>
+</div>

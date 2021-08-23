@@ -1,0 +1,11 @@
+.amount-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  margin-bottom: 10px;
+  width: 110px;
+}
